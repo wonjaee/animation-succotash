@@ -1,0 +1,26 @@
+public class LogicalOperator {
+	
+	public static void main(String[] args) {
+		int a,b;
+		a=10;
+		b=20;
+		//&&둘다 true일때만 true
+		System.out.println(a>b && a<b);
+		System.out.println(a>b && a<b);
+		System.out.println(a>b && a<b);
+		System.out.println(a>b && a<b);
+		//연산자 우선순위
+		
+		//||둘다 false일때만 false
+		System.out.println(a>b || a<b);
+		System.out.println(a>b || a<b);
+		System.out.println(a>b || a<b);
+		System.out.println(a>b || a<b);
+		
+		
+		System.out.println(!(a>b));
+		
+		
+	}
+
+}
