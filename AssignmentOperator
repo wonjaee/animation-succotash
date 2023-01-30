@@ -1,0 +1,22 @@
+package day0130;
+
+public class AssignmentOperator {
+
+	public static void main(String[] args) {
+		int a=60;
+		a= a+1;
+		//a증가연산자 a++,a+=1 과같다
+		System.out.println(a);
+		a= a-1;//a-=1 과 같다
+		
+		byte num=127;
+		System.out.println((byte)(num+1));
+		//num = (byte)(num + 1);
+		//System.out.println(num);
+		
+		//int b= a>0?1:0;
+		String b= a>0?"참":"거짓";
+		System.out.println(b);
+	}
+
+}
