@@ -1,0 +1,42 @@
+package day0127;
+
+public class ArithmeticOperators {
+	
+	public static void main(String[] args) {
+		
+		//메인메서드 안에있는건 로컬변수
+		int a=10;
+		int b=20;
+		System.out.println("a+b="+(a+b));
+		System.out.println(a-b);
+		System.out.println(a*b);
+		System.out.println(a/b);//나눗셈: 정수/정수==정수
+		System.out.println(a%b);//나눠서 나머지를 리턴 // 단 정수와정수만 계산
+		System.out.println(1.0*a/b);
+		System.out.println(a/b*1.0);
+		System.out.println((double)a/b);
+		System.out.println(a/(double)b);
+		
+		a++;//1증가 연산자
+		b--;//1감소 연산자 //변수에만가능 20--(x)
+		System.out.println(a);
+		System.out.println(b);
+		--a;
+		++b;
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println("----------");
+		System.out.println(a++);
+		//출력할때는 변경x 출력이후에 변경됨
+		System.out.println(a);
+		System.out.println(b--);
+		System.out.println(b);
+		System.out.println(--a);
+		//전위연산 : a가먼저 감소연산후 출력
+		System.out.println(++b);
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(a+++b);
+		System.out.println(a);
+	}
+}
