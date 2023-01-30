@@ -1,0 +1,24 @@
+
+public class BitOperator {
+	//bit 연산
+	public static void main(String[] args) {
+		byte a= 60;
+		byte b= 13;
+		//기본연산단위는 int형
+		System.out.printf("a & b= %d\n",(a&b));
+		System.out.printf("a | b= %d\n",(a|b));
+		System.out.printf("a ^ b= %d\n",(a^b));
+		//두개의 값이 같으면 다르면 1 같으면 0
+		System.out.printf("~a = %d\n",(~a));
+		//비트의 부정 하나의값만 계산
+		System.out.printf("~b = %d\n",(~b));
+		System.out.printf("a<<2 = %d\n",(a<<2));
+		System.out.printf("a>>2 = %d\n",(a>>2));
+		a=-60;
+		//비트단위 오른쪽으로 2칸이동후 부호가 -이므로 빈칸을 1로 채운이진수
+		System.out.printf("a>>2 = %d\n",(a>>2));
+		System.out.printf("a>>>2 = %d, %d\n",(a>>>2),(byte)(a>>>2));
+	
+	}
+
+}
