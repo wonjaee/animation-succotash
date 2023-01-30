@@ -38,5 +38,7 @@ public class ArithmeticOperators {
 		System.out.println(b);
 		System.out.println(a+++b);
 		System.out.println(a);
+		
+		//백준 프로그래머스 들어가서 문제 풀어보기
 	}
 }
