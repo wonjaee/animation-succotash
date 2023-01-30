@@ -1,0 +1,17 @@
+package iftest;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class IfTest01 {
+
+	public static void main(String[] args) throws IOException {
+		
+		
+		//int num=System.in.read();
+		Scanner in=new Scanner(System.in);
+		System.out.println("숫자를 입력하고 엔터를 치세요");
+		int num = in.nextInt();
+		System.out.println(num);
+			
+		}
