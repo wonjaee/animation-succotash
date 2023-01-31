@@ -1,0 +1,32 @@
+package iftest;
+
+import java.util.Scanner;
+//import java.lang.System; 자바랭 파일은 자주사용하기때문에 그냥사용가능
+public class Test02 {
+
+	public static void main(String[] args) {
+		
+		Scanner in=new Scanner(System.in);
+		
+		int num = in.nextInt();
+		
+		in.close();
+		if(num%2 == 0) {
+			System.out.printf("%d는 짝수입니다.",num);
+		}else {
+			System.out.printf("%d는 홀수입니다.",num);
+		}
+		
+		
+		
+		//접속을 종료해줘야함.
+		/*범위주석
+		if(num%2 == 0) {
+			System.out.printf("%d는 짝수입니다.",num);
+		}
+		if(num%2 == 1) {
+			System.out.printf("%d는 홀수입니다.",num);
+		}
+		 //최초만나는 별까지*/
+	}
+}
