@@ -1,0 +1,31 @@
+package iftest;
+
+import java.util.Scanner;
+
+public class IfTest03 {
+	
+	public static void main(String[] args) {
+		
+		Scanner in=new Scanner(System.in);
+		System.out.println("숫자를 입력하세요.");
+		int num=in.nextInt();
+		in.close();
+		//음수,0,양수
+		
+		
+		 if(num==0) {
+			System.out.printf("0입니다.",num);
+		
+		}
+		
+		else {//else{음수,양수 가능)
+			if(num>0) {
+				System.out.printf("양수입니다.",num);
+			}else{
+				System.out.printf("음수입니다.",num);
+		}
+		 
+		}
+	
+	}
+}
