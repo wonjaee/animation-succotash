@@ -1,0 +1,25 @@
+package switchs;
+
+public class SwitchTest01 {
+
+	public static void main(String[] args) {
+		char num = 'b';
+		//switch에는 값,변수,연산식
+		//결과값과 일치하는 case 위치에서 시작
+		switch (num) {
+		// 콜론은 위치를 지정하는 표현
+		case 'a':
+			System.out.println("a");
+		case 'b':
+			System.out.println("b");
+		case 'c':
+			System.out.println("c");
+		//default 는 필수x 옵션o
+		default:
+			System.out.println("case외 나머지");
+
+		}
+
+	}
+
+}
