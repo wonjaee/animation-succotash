@@ -1,6 +1,7 @@
 package iftest;
 
 import java.io.IOException;
+
 import java.util.Scanner;
 
 public class IfTest01 {
@@ -12,6 +13,18 @@ public class IfTest01 {
 		Scanner in=new Scanner(System.in);
 		System.out.println("숫자를 입력하고 엔터를 치세요");
 		int num = in.nextInt();
-		System.out.println(num);
-			
+		//nextInt==화이트스페이스까지 저장한다
+		//System.out.println(num);
+		
+		//if(조건문) {조건문이 true일때 실행하는 영역}
+		//if 문에서는 마지막문장에서 ";" 를 찍으면안된다
+		if(num%2==1) {//num이 홀수이면 {}실행
+			System.out.printf("%d 는 홀수입니다.\n",num);
 		}
+		
+		System.out.println("프로그램 종료");
+		}
+			
+
+	}
+	
