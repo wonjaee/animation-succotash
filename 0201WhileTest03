@@ -1,0 +1,18 @@
+package loop;
+
+public class WhileTest03 {
+
+	public static void main(String[] args) {
+		
+		
+		int i=10;
+		while(i>0) {
+			//i++;
+			System.out.println(i);
+			
+			i--;
+		}
+		System.out.println("i="+i);
+		//i의 마지막 값은? 0
+	}
+}
