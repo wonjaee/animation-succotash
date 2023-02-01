@@ -1,0 +1,16 @@
+package loop;
+
+public class WhileTest05 {
+
+	public static void main(String[] args) {
+		int i=0;
+		while(i<100) {
+			if(i%2==1){i++;continue;}//짝수출력방법
+			//continue를 만나면 아래문장은 실행되지않고 조건문으로 이동.
+			System.out.println(i);
+		
+		i++;
+		}
+	}
+
+}
