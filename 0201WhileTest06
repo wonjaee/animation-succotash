@@ -1,0 +1,39 @@
+package loop;
+
+public class WhileTest06 {
+	
+	public static void main(String[] args) {
+		int dan=2;
+		int i;
+		
+		while(dan<=9) { 
+			System.out.println(dan+"단------");
+		i=1;
+		while(i<=9) {
+		System.out.printf("%d * %d= %02d\n",dan ,i ,dan*i);//%d(서식기호)가 2개라서 값도 2개여야한다.
+		i++;
+		}
+		dan++;
+		}
+//		%2d는 2자릿수정렬 표현법이다. 
+//		%02d는 한자릿수에 0을 붙여준다.
+//		System.out.printf("%d * %d= %d\n",2 ,i ,2*i);
+//		i++;
+//		System.out.printf("%d * %d= %d\n",2 ,i ,2*i);
+//		i++;
+	}//while 
+//		dan++;
+//		i=1;
+//		while(i<=9) {
+//		System.out.printf("%d * %d= %02d\n",dan ,i ,dan*i);//%d(서식기호)가 2개라서 값도 2개여야한다.
+//		i++;
+//		}
+//		dan++;
+//		i=1;
+//		while(i<=9) {
+//		System.out.printf("%d * %d= %02d\n",dan ,i ,dan*i);//%d(서식기호)가 2개라서 값도 2개여야한다.
+//		i++;
+//		}
+
+}//main
+//class
