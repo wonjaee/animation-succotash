@@ -1,0 +1,18 @@
+package loop;
+
+public class WhileTest01 {
+	
+	public static void main(String[] args) {
+		
+		//while(조건문) {조건이 true일때 실행}
+		//while문법이 종료문법이없으면 다음문장이 실행되지않는다.
+		//break로 문법종료가능함.
+		//반복문장에는 탈출문법이 들어가야함.
+		while(true) {
+			System.out.println("안녕");
+			break;
+		}
+		System.out.println("프로그램을 종료합니다.");
+	}
+
+}
