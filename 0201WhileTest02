@@ -1,0 +1,14 @@
+package loop;
+
+public class WhileTest02 {
+
+	public static void main(String[] args) {
+
+		int i =0;//초기값 세팅
+		while(i<100) {//조건문에 할당
+			System.out.println(i);
+			i=i+2;//증감 //i+=2와 같다.
+		}
+	}
+
+}
