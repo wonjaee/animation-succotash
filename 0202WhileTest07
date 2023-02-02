@@ -1,0 +1,22 @@
+package loop;
+
+public class WhileTest07 {
+
+	public static void main(String[] args) {
+		int i=1;
+		int dan;
+		while(i<=9){//고정값
+			dan=2;
+		while(dan<=9){//변경값
+		System.out.printf("%d*%d=%2d ",dan,i,dan*i);
+		dan++;
+		}
+		i++;
+		System.out.println();
+//		System.out.printf("\n"); 줄바꿈 3개다 동일
+//		System.out.print("\n");
+		
+		 
+	}
+}
+}
