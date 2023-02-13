@@ -1,66 +1,62 @@
-package wonjaefirst01;
+package ex;
 
 import java.util.Scanner;
 
-public class EX01 {
+public class Ex01 {
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
+		
+		boolean run=true;//false
+		
+		int balance=0;//잔고
+		int x=0;
+		int y=0;
+		Scanner in=new Scanner(System.in);
+		
+		while(run) {
+			displayMenu();
+			int n=0;
+			n=in.nextInt();
 			
-			boolean run=true;//false
-			int balance=0;//잔고
-			int x=0;
-			int y=0;
-			Scanner in=new Scanner(System.in);
+			switch(n) {
+			case 1:
+				System.out.println("입금액");
+				x=in.nextInt();
+				balance+=x;
+				break;
+			case 2:
+				System.out.println("출금액");
+				y=in.nextInt();
+				balance-=y;
+				break;
+			case 3:
+				System.out.println("현재잔액");
+				System.out.println(balance);
+				break;
 			
-			
-			while(run) {
-				displayMenu();
-				int n=in.nextInt();
+			case 4:
+				run=false;
+				System.out.println("프로그램이 종료합니다.");
+				break;
 				
-				
-				switch(n) {
-				case 1 :
-					System.out.println("입금액");
-					x=in.nextInt();	
-					balance=balance+x;
-					System.out.println(balance);
-					break;
-				case 2:
-					System.out.println("출금액");
-					y=in.nextInt();
-					balance=balance-y;
-					System.out.println(balance);
-					break;
-				case 3 :
-					System.out.println("현재잔액");	
-					System.out.println(balance);
-					break;
-					
-				case 4:
-						System.out.println("프로그램이 종료합니다.");	
-						break;
-						
-				}
-				
-				
-				////아래 프로그램을 작성
-				////1. 누르면 입금액 : ex)1000
-				////2. 누르면 출금액 : ex)1000
-				////3. 누르면 현재잔액 : 금액표시
-				////4. 누르면 while 탈출
 			}
-			
-			
-		}//main메서드 끝
-
-		private static void displayMenu() {
-			System.out.println("-----------------------------");
-			System.out.println("1. 입금 | 2. 출금 | 3.잔고 : 4.종료");
-			System.out.println("-----------------------------");
-			System.out.print("선택 > ");
-			
-		}
 	
+			////아래 프로그램을 작성
+			////1. 누르면 입금액 : ex)1000
+			////2. 누르면 출금액 : ex)1000
+			////3. 누르면 현재잔액 : 금액표시
+			////4. 누르면 while 탈출
+		}
+		
+		
+		
+	}//main메서드 끝
 
-
+	private static void displayMenu() {
+		System.out.println("-----------------------------");
+		System.out.println("1. 입금 | 2. 출금 | 3.잔고 : 4.종료");
+		System.out.println("-----------------------------");
+		System.out.print("선택 > ");
+		
+	}
 }
