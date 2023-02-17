@@ -1,0 +1,35 @@
+package enums;
+
+import java.util.Calendar;
+
+public class Ex {
+
+	public static void main(String[] args) {
+		Calendar cal=Calendar.getInstance();
+		cal.set(Calendar.DAY_OF_MONTH, 1);
+		System.out.println("요일정보:"+cal.get(Calendar.DAY_OF_WEEK));
+		System.out.println("요일정보:"+cal.get(Calendar.DAY_OF_MONTH));
+		System.out.println("요일정보:"+cal.get(Calendar.DATE));
+		System.out.println("마지막날짜:"+cal.getActualMaximum(Calendar.DAY_OF_MONTH));
+		
+		Week[] w=Week.values();
+		for(int i=0; i<w.length; i++) {
+			System.out.printf("%3s ",w[i]);
+		}
+		System.out.println();
+		
+		for(int i=1; i<cal.get(Calendar.DAY_OF_WEEK);i++) {
+			System.out.print("    ");
+		}
+		
+		int lastDay=cal.getActualMaximum(Calendar.DAY_OF_MONTH);
+		for(int i=1; i<=lastDay; i++) {
+			cal.set(Calendar.DAY_OF_MONTH,i);
+			int n=cal.get(Calendar.DAY_OF_WEEK);
+			System.out.printf("%3d ", i);
+			if(n==7)System.out.println();
+			
+		}
+	}
+
+}
